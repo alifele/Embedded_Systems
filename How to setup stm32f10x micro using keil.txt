@@ -1,0 +1,54 @@
+How to setup the stm32f103RC micro controllers (Generally all of the stm32f10x micro controllers)
+
+1. install keil uvision
+
+2. download and install the MDK legacy support from the http://www2.keil.com/mdk5/legacy
+
+3. open new project
+
+4. in the wizard select the microcontroller type (in my case it was stm32f103RC). make sure to select the chip form 'legacy device database'. if you
+don't have this option make sure you have done step 2 correctly
+
+5. it is recommended to create three Source Group folders with names : User, MCSIS, MCSIS Driver. you can also rename the 'source group 1' to 'Startup'.
+
+6. create main.c file containing the following code :
+'''
+int main(){
+	while(1){
+	}
+}
+'''
+
+7. add the file to the Startup folders
+
+8. if you compile the code you will get the 'undefined error SystemInit error. To solve this you should do the following:
+
+9. go to the folder of your project. make the 'inc' (i.e. include) and 'src' (i.e. source ) folders. these are recommended as to keep the
+project directory clean.
+
+10. go to the clone the stm32f10x-MCSIS libraries folder in my github page : https://github.com/alifele/STM32-and-STM8-MicroController
+
+11. from the 'STM32f10x-CMSIS Libraries\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x' path add the system_stmf10x.c file to
+the 'src' folder and system_stmf10x.h file to the 'inc' folder that were created in step 9.
+
+12. from keil, left click on the CMSIS Drivers and select 'add existing file to folder'. From the dialog window select the system_stmf10x.c file.
+
+13. to say the keil where to look for the header files, you should define path of the header files. to do this left click on the target 1 and go to the options.
+in the C/C++ tab define your path in which in our case is the 'inc' folder.
+
+14. now if you compile the project you will get no errors. thats it. you could set up keil and libraries. But suppose that you want to use the General Purpose
+Input Output pins. you should import the required source file and header file to project. But this procedure is a little bit tricky. Come with me:
+
+15. to use the GPIOs or other libraries you should #include <stm32f10x.h> to the main.c file. So add the header file from 'STM32f10x-CMSIS Libraries\
+STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x' path to the 'inc' folder. and the #include <stm32f10x.h> to main.c file
+
+16. if you get the 'target selection error', go to the stm32f10x.h header file and select the type of your board. mine is STM32F10X_HD
+
+17. if you now compile the main.c once again you will get 'symbol assert_parat' error. to solve this go to the option, C/C++ tab and define the following values
+as the preprocessor symbols : STM32f10x_CL, USE_STDPERIPH_DRIVER
+
+18. after doing this you will get the error in the #include part of code which says that I can't find a file. to add stm32f10x_conf.h go to :
+'STM32f10x-CMSIS Libraries\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Template' and add stm32f10x_conf.h to 'inc'.
+
+19. now the last step to solve all of the errors add all of the header files in 'STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x
+\inc' path to the 'inc folder in the project folder'
