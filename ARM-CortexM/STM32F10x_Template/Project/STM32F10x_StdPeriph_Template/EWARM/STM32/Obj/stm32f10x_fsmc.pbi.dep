@@ -1,0 +1,39 @@
+stm32f10x_fsmc.pbi: \
+  B:\STM32_Template\Template\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\CMSIS\Core\Include\core_cm3.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Full.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\CMSIS\Core\Include/cmsis_version.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\CMSIS\Core\Include/cmsis_compiler.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\CMSIS\Core\Include\cmsis_iccarm.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\iccarm_builtin.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\stm32f10x_conf.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h \
+  B:\STM32_Template\Template\Project\STM32F10x_StdPeriph_Template\EWARM\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
