@@ -1,0 +1,62 @@
+Correct:
+#include <stdio.h>
+
+typedef struct{
+    int width;
+    int height;
+}Shape;
+
+void change (Shape *shape);
+
+int main()
+{   
+    Shape shape;
+    
+    change(&shape);
+    
+    printf("%d", shape.width);
+
+    return 0;
+}
+
+void change (Shape *shape){
+    
+    shape->width = 3333;
+    shape->height = 2222;
+    
+}
+
+____________________________________________
+Not Correct:
+
+#include <stdio.h>
+
+typedef struct{
+    int width;
+    int height;
+}Shape;
+
+void change (Shape *shape);
+
+int main()
+{   
+    Shape *shape;
+    
+    change(shape);
+    
+    printf("%d", shape->width);
+
+    return 0;
+}
+
+void change (Shape *shape){
+    
+    shape->width = 3333;
+    shape->height = 2222;
+    
+}
+
+___________________________________________
+
+Here is the most relevant website:
+https://overiq.com/c-programming-101/pointer-to-a-structure-in-c/
