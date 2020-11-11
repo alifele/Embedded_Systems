@@ -6,6 +6,8 @@ typedef struct{
     int height;
 }Shape;
 
+
+
 void change (Shape *shape);
 
 int main()
