@@ -1,1 +1,1 @@
-# STM32-and-STM8-MicroController
+# STM32 and STM8 MicroController
